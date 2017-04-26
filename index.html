@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Signika+Negative" rel="stylesheet">
+    <meta name="author"	content="Vinay" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="greensock/TweenLite.min.js"></script>
+    <script type="text/javascript" src="greensock/plugins/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+	<title>Scheduling Game</title>
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+	
+</head>
+<body>
+    <div class="all">
+  <div id="demo">
+      <span id="new"class="color-1">T</span>
+      <span class="color-2">h</span>
+      <span class="color-3">e</span>
+      <span class="color-4">&nbsp</span>
+      <span class="color-1">S</span>
+      <span class="color-2">c</span>
+      <span class="color-3">h</span>
+    <span class="color-4">e</span>
+     <span class="color-1">d</span>
+      <span class="color-2">u</span>
+      <span class="color-2">l</span>
+      <span class="color-3">i</span>
+    <span class="color-4">n</span>
+    <span class="color-1">g</span>
+      <span class="color-2">&nbsp</span>
+      <span class="color-2">G</span>
+      <span class="color-3">a</span>
+    <span class="color-4">m</span>
+        <span class="color-1">e</span></div>
+
+
+
+        <div class="blocker"><div class="box1">
+          <p>First-Come, First-Served (FCFS) Scheduling</p>
+        </div>
+
+
+
+        <div class="box2">
+          <p>Shortest-Job-Next (SJN) Scheduling</p>
+        </div>
+
+ 
+        <div class="box3">
+          <p>Priority Scheduling</p>
+    </div>
+    <div class="box4">
+          <p>Shortest Remaining Time</p>
+    </div>
+    <div class="box5">
+          <p>Round Robin(RR) Scheduling</p>
+    </div>
+
+    
+    </div>
+    
+    </div>
+    <div class="ffs">
+    <h1 class="game">Enter the players details:</h1>
+        <div class="container"><div class="row">
+            <div class="col-md-3 md1">
+                    <h1 class="game">Player 1:</h1>
+      
+        <h2 class="bt1">Burst time: 0</h2><input type='range' min=0 max=9 id='num2' value=0><br> 
+                </div>
+            <div class="col-md-3 md2">
+                <h1 class="game">Player 2:</h1>
+       
+        <h2 class="bt2">Burst time: 0</h2><input type='range' min=0 max=9 id='num4' value=0><br>  
+                </div>
+            <div class="col-md-3 md3">
+                <h1 class="game">Player 3:</h1>
+        
+        <h2 class="bt3">Burst time: 0</h2><input type='range' min=0 max=9 id='num6' value=0><br> 
+                </div>
+            <div class="col-md-3 md4">
+                <h1 class="game">Player 4:</h1>
+       
+        <h2 class="bt4">Burst time: 0</h2><input type='range' min=0 max=9 id='num8' value=0><br> 
+                </div>
+            </div>
+            <button class="btn second ffsb">Start</button>
+            </div>
+    </div>
+    
+    <div class="ffsgame">
+        <div class="wrap">
+  <div class="ball fb1"><p>P1</p></div>
+</div>
+         <div class="wrap">
+  <div class="ball fb2"><p>P2</p></div>
+</div>
+         <div class="wrap">
+  <div class="ball fb3"><p>P3</p></div>
+</div>
+         <div class="wrap">
+  <div class="ball fb4"><p>P4</p></div>
+</div>
+        <div class="ffsdetails"><p class="fp1"></p><p class="fp2"></p></div>
+    </div>
+    
+    
+    
+    <div class="sjf">
+    <h1 class="sjfplayer">Enter the players details:</h1>
+        <div class="container"><div class="row">
+            <div class="col-md-3 sjfmd1">
+                    <h1 class="game">Player 1:</h1>
+      
+        <h2 class="bt1">Burst time: 0</h2><input type='range' min=0 max=9 id='num2' value=0><br> 
+                </div>
+            <div class="col-md-3 sjfmd2">
+                <h1 class="game">player 2:</h1>
+       
+        <h2 class="bt2">Burst time: 0</h2><input type='range' min=0 max=9 id='num4' value=0><br>  
+                </div>
+            <div class="col-md-3 sjfmd3">
+                <h1 class="game">Player 3:</h1>
+        
+        <h2 class="bt3">Burst time: 0</h2><input type='range' min=0 max=9 id='num6' value=0><br> 
+                </div>
+            <div class="col-md-3 sjfmd4">
+                <h1 class="game">layer 4:</h1>
+       
+        <h2 class="bt4">Burst time: 0</h2><input type='range' min=0 max=9 id='num8' value=0><br> 
+                </div>
+            </div>
+            <button class="btn second sjfb">Start</button>
+            </div>
+    </div>
+    
+    <div class="sjfgame">
+        <div class="sjfwrap">
+  <div class="ball sjfb1"><p>P1</p></div>
+</div>
+         <div class="sjfwrap">
+  <div class="ball sjfb2"><p>P2</p></div>
+</div>
+         <div class="sjfwrap">
+  <div class="ball sjfb3"><p>P3</p></div>
+</div>
+         <div class="sjfwrap">
+  <div class="ball sjfb4"><p>P4</p></div>
+</div>
+        <div class="sjfdetails"><p class="sjfp1"></p><p class="sjfp2"></p></div>
+    </div>
+    
+    
+    <div class="ps">
+    <h1 class="psplayer">Enter the players details:</h1>
+        <div class="container"><div class="row">
+            <div class="col-md-3 psmd1">
+                    <h1 class="game">Player 1:</h1>
+      
+        <h2 class="bt1">Burst time: 0</h2><input type='range' min=0 max=9 id='num1' value=0><br> 
+                <h2 class="at1">Arrival time: 0</h2><input type='range' min=0 max=9 id='num2' value=0><br>
+                <h2 class="pt1">Priority: 0</h2><input type='range' min=0 max=9 id='num3' value=0><br>
+                </div>
+            <div class="col-md-3 psmd2">
+                <h1 class="game">Player 2:</h1>
+       
+        <h2 class="bt2">Burst time: 0</h2><input type='range' min=0 max=9 id='num4' value=0><br> 
+                <h2 class="at2">Arrival time: 0</h2><input type='range' min=0 max=9 id='num5' value=0><br>
+                <h2 class="pt2">Priority: 0</h2><input type='range' min=0 max=9 id='num6' value=0><br>  
+                
+                </div>
+            <div class="col-md-3 psmd3">
+                <h1 class="game">Player 3:</h1>
+        
+        <h2 class="bt3">Burst time: 0</h2><input type='range' min=0 max=9 id='num7' value=0><br> 
+                <h2 class="at3">Arrival time: 0</h2><input type='range' min=0 max=9 id='num8' value=0><br>
+                <h2 class="pt3">Priority: 0</h2><input type='range' min=0 max=9 id='num9' value=0><br> 
+                </div>
+            <div class="col-md-3 psmd4">
+                <h1 class="game">Player 4:</h1>
+       
+        <h2 class="bt4">Burst time: 0</h2><input type='range' min=0 max=9 id='num10' value=0><br> 
+                <h2 class="at4">Arrival time: 0</h2><input type='range' min=0 max=9 id='num11' value=0><br>
+                <h2 class="pt4">Priority: 0</h2><input type='range' min=0 max=9 id='num12' value=0><br>
+                </div>
+            </div>
+            <button class="btn second psb">Start</button>
+            </div>
+    </div>
+    
+    <div class="psgame">
+        <div class="pswrap psw1">
+  <div class="ball psb1"><p>P1</p></div>
+</div>
+         <div class="pswrap psw2">
+  <div class="ball psb2"><p>P2</p></div>
+</div>
+         <div class="pswrap psw3">
+  <div class="ball psb3"><p>P3</p></div>
+</div>
+         <div class="pswrap psw4">
+  <div class="ball psb4"><p>P4</p></div>
+</div>
+        <div class="psdetails"><p class="psp1"></p><p class="psp2"></p></div>
+    </div>
+    
+    <div class="srt">
+    <h1 class="srtplayer">Enter the players details:</h1>
+        <div class="container"><div class="row">
+            <div class="col-md-3 srtmd1">
+                    <h1 class="game">Player 1:</h1>
+      
+        <h2 class="bt1">Burst time: 0</h2><input type='range' min=0 max=9 id='num1' value=0><br> 
+                <h2 class="at1">Arrival time: 0</h2><input type='range' min=0 max=9 id='num2' value=0><br>
+                </div>
+            <div class="col-md-3 srtmd2">
+                <h1 class="game">Player 2:</h1>
+       
+        <h2 class="bt2">Burst time: 0</h2><input type='range' min=0 max=9 id='num3' value=0><br> 
+                <h2 class="at2">Arrival time: 0</h2><input type='range' min=0 max=9 id='num4' value=0><br>
+                </div>
+            <div class="col-md-3 srtmd3">
+                <h1 class="game">Player 3:</h1>
+        
+        <h2 class="bt3">Burst time: 0</h2><input type='range' min=0 max=9 id='num5' value=0><br> 
+                <h2 class="at3">Arrival time: 0</h2><input type='range' min=0 max=9 id='num6' value=0><br> 
+                </div>
+            <div class="col-md-3 srtmd4">
+                <h1 class="game">Player 4:</h1>
+       
+        <h2 class="bt4">Burst time: 0</h2><input type='range' min=0 max=9 id='num7' value=0><br> 
+                <h2 class="at4">Arrival time: 0</h2><input type='range' min=0 max=9 id='num8' value=0><br>
+                </div>
+            </div>
+            <button class="btn second srtb">Start</button>
+            </div>
+    </div>
+    
+    <div class="srtgame">
+        <div class="srtwrap srtw1">
+  <div class="ball srtb1"><p>P1</p></div>
+</div>
+         <div class="srtwrap srtw2">
+  <div class="ball srtb2"><p>P2</p></div>
+</div>
+         <div class="srtwrap srtw3">
+  <div class="ball srtb3"><p>P3</p></div>
+</div>
+         <div class="srtwrap srtw4">
+  <div class="ball srtb4"><p>P4</p></div>
+</div>
+        <div class="srtdetails"><p class="srtp1"></p><p class="srtp2"></p></div>
+    </div>
+    
+    
+    <div class="rr">
+    <h1 class="rrplayer">Enter the players details:</h1>
+        <div class="container"><div class="row">
+            <div class="col-md-3 rrmd1">
+                    <h1 class="game">Player 1:</h1>
+      
+        <h2 class="bt1">Burst time: 0</h2><input type='range' min=0 max=9 id='num1' value=0><br> 
+                <h2 class="at1">Arrival time: 0</h2><input type='range' min=0 max=9 id='num2' value=0><br>
+                </div>
+            <div class="col-md-3 rrmd2">
+                <h1 class="game">Player 2:</h1>
+       
+        <h2 class="bt2">Burst time: 0</h2><input type='range' min=0 max=9 id='num3' value=0><br> 
+                <h2 class="at2">Arrival time: 0</h2><input type='range' min=0 max=9 id='num4' value=0><br>
+                </div>
+            <div class="col-md-3 rrmd3">
+                <h1 class="game">Player 3:</h1>
+        
+        <h2 class="bt3">Burst time: 0</h2><input type='range' min=0 max=9 id='num5' value=0><br> 
+                <h2 class="at3">Arrival time: 0</h2><input type='range' min=0 max=9 id='num6' value=0><br> 
+                </div>
+            <div class="col-md-3 rrmd4">
+                <h1 class="game">Player 4:</h1>
+       
+        <h2 class="bt4">Burst time: 0</h2><input type='range' min=0 max=9 id='num7' value=0><br> 
+                <h2 class="at4">Arrival time: 0</h2><input type='range' min=0 max=9 id='num8' value=0><br>
+                </div>
+            </div>
+            <button class="btn second rrb">Start</button>
+            </div>
+    </div>
+    
+    <div class="rrgame">
+        <div class="rrwrap rrw1">
+  <div class="ball rrb1"><p>P1</p></div>
+</div>
+         <div class="rrwrap rrw2">
+  <div class="ball rrb2"><p>P2</p></div>
+</div>
+         <div class="rrwrap rrw3">
+  <div class="ball rrb3"><p>P3</p></div>
+</div>
+         <div class="rrwrap rrw4">
+  <div class="ball rrb4"><p>P4</p></div>
+</div>
+        <div class="rrdetails"><p class="rrp1"></p><p class="rrp2"></p></div>
+    </div>
+    
+    <script type="text/javascript" src="motion.js"></script>
+</body>
+</html>
